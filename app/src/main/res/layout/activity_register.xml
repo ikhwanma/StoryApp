@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center"
+    tools:context=".ui.register.RegisterActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingHorizontal="8dp"
+        android:hint="@string/masukkan_nama"
+        android:background="@drawable/style_edit_text"
+        android:inputType="text"
+        android:autofillHints="name"
+        android:layout_marginTop="10dp"/>
+
+    <ikhwan.dicoding.storyapp.customview.EmailEditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingHorizontal="8dp"
+        android:hint="@string/masukkan_email"
+        android:background="@drawable/style_edit_text"
+        android:inputType="textEmailAddress"
+        android:autofillHints="emailAddress"
+        android:layout_marginTop="10dp"/>
+
+    <ikhwan.dicoding.storyapp.customview.PasswordEditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingHorizontal="8dp"
+        android:hint="@string/masukkan_password"
+        android:background="@drawable/style_edit_text"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        />
+
+    <ikhwan.dicoding.storyapp.customview.RegisterButton
+        android:id="@+id/btn_register"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:enabled="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

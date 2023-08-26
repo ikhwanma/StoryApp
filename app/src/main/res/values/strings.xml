@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Story App</string>
+    <string name="masukkan_nama">Masukkan Nama</string>
+    <string name="masukkan_email">Masukkan Email</string>
+    <string name="masukkan_password">Masukkan Password</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="belum_memiliki_akun_register_sekarang">Belum memiliki akun? Register Sekarang</string>
+    <string name="image">Image</string>
+    <string name="username">Username</string>
+    <string name="add">add</string>
+    <string name="tulis_deskripsi">Tulis Deskripsi</string>
+    <string name="add_story">Add Story</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>

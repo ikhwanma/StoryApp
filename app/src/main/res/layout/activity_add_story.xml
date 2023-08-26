@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".ui.add_story.AddStoryActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_img"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="8dp"
+        android:translationZ="8dp">
+        <ImageView
+            android:id="@+id/iv_post"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_add_a_photo_24"
+            android:layout_gravity="center"
+            android:contentDescription="@string/image" />
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/image" />
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/et_description"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints="description"
+        android:background="@drawable/style_edit_text"
+        android:gravity="top"
+        android:hint="@string/tulis_deskripsi"
+        android:layout_below="@id/cv_img"
+        android:inputType="textMultiLine"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button_enable"
+        android:layout_alignParentBottom="true"
+        android:text="@string/add_story"
+        android:textAllCaps="false"/>
+
+</RelativeLayout>
